@@ -1,82 +1,77 @@
 package murach.business;
 
 import java.io.Serializable;
-import java.util.Date;
 
 public class User implements Serializable {
+    
     private String firstName;
     private String lastName;
     private String email;
     private String dob;
-    private String how;
-    private String yes;
-    private String contact;
-
+    private String heardFrom;
+    private String wantsUpdates;
+    private String contactVia;
+    
     public User() {
         firstName = "";
         lastName = "";
         email = "";
-        dob = "";
     }
-
-    public User(String firstName, String lastName, String email, String dob, String how, String yes, String contact) {
+    
+    public User(String firstName, String lastName, String email, String dob, String heardFrom, String wantsUpdates, String contactVia) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.dob = dob;
-        this.how= how;
-        this.yes=yes;
-        this.contact=contact;
+        this.heardFrom= heardFrom;
+        this.wantsUpdates=wantsUpdates;
+        this.contactVia=contactVia;
     }
+    
     public String getFirstName() {
         return firstName;
     }
-
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-
+    
     public String getLastName() {
         return lastName;
     }
-
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
+    
     public String getEmail() {
         return email;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
-
+    
     public String getDob(){return dob;}
-
     public void setDob(String dob) { this.dob = dob; }
-
-    public String getHow() {
-        return how;
+    
+    public String getHeardFrom() {
+        return heardFrom;
     }
-
-    public void setHow(String how) {
-        this.how = how;
+    public void setHeardFrom(String heardFrom) {
+        this.heardFrom = heardFrom;
     }
-
-    public String getYes() {
-        return yes;
+    
+    public String getWantsUpdates() {
+        return wantsUpdates;
     }
-
-    public void setYes(String yes) {
-        this.yes = yes;
+    
+    public void setWantsUpdates(String wantsUpdates) {
+        this.wantsUpdates = wantsUpdates;
     }
-
-    public String getContact() {
-        return contact;
+    
+    public String getContactVia() {
+        return contactVia;
     }
-
-    public void setContact(String contact) {
-        this.contact = contact;
+    
+    public void setContactVia(String contactVia) {
+        this.contactVia = contactVia;
     }
 }
