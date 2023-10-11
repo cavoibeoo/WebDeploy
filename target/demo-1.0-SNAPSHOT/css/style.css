@@ -258,7 +258,7 @@ header.sticky {
 }
 
 .portfolio-box img{
-    width: 100%;
+    width: fit-content;
     transition: .5s ease;
 }
 
