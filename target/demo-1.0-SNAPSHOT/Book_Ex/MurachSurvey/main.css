@@ -1,25 +1,10 @@
 
-body {
+html,body {
+    display: flex;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11pt;
-    margin-left: 2em;
-    margin-right: 2em;
-}
-
-.back-btn {
-    all: unset;
-    cursor: pointer;
-    display: block;
-    width: 115px;
-    height: 25px;
-    background: #4E9CAF;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    line-height: 25px;
-    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -34,7 +19,8 @@ h3 {
 }
 label {
     float: left;
-    width: 10em;
+    justify-content: left;
+    width: 10rem;
     margin-bottom: 0.5em;
 }
 input[type="text"], input[type="email"] {
@@ -47,3 +33,21 @@ br {
 }
 #submit {
     margin-left: 0.5em; }
+
+.Outside{
+    justify-content: center;
+    width: 600px; /* Set the width of the box */
+    background-color: #f0f0f0; /* Set the background color of the box */
+    border: 1px solid #000; /* Add a border to the box */
+    padding: 20px; /* Add padding inside the box */
+    text-align: center; /* Center-align the text */
+}
+
+.goHome{
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 3rem 1.5rem 3rem 0;
+}

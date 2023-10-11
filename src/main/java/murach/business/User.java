@@ -12,10 +12,17 @@ public class User implements Serializable {
     private String wantsUpdates;
     private String contactVia;
     
+    
     public User() {
         firstName = "";
         lastName = "";
         email = "";
+    }
+    
+    public User(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
     }
     
     public User(String firstName, String lastName, String email, String dob, String heardFrom, String wantsUpdates, String contactVia) {

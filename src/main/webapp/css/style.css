@@ -39,7 +39,7 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: rgba(0,0,0, .2);
+    background: rgba(0,0,0, .1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,6 +60,7 @@ header.sticky {
 
 .navbar a{
     font-size: 1.7rem;
+    font-weight: bold;
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
@@ -202,7 +203,9 @@ header.sticky {
 
 
 .portfolio{
-    background-color: var(--bg-color);
+    background-image: url("../img/bg_2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .portfolio h2{
@@ -255,12 +258,14 @@ header.sticky {
 
 .portfolio-layer h4{
     font-size: 3rem;
+    color: #e798ca;
 }
 
 .portfolio-layer p{
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
-    max-width: 20rem
+    max-width: 20rem;
+    color: #e798ca;
 }
 
 .portfolio-layer a{
