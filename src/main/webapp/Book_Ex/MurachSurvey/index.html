@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Murach's Java Servlets and JSP</title>
-    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <link rel="stylesheet" href="../../css/main.css" type="text/css"/>
 
     <!--  Box icon  -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -13,29 +13,40 @@
 <body>
 <div class="Outside">
     <header>
-
-        <img src="beluga.jpg" height="150" width="150"/>
+        <img src="beluga.jpg" height="150" width="150">
         <h1 class="title">Survey</h1>
         <p class="header-text">If you have a moment, we'd appreciate it if you would fill out this survey</p>
     </header>
 
     <section>
         <form action="emailListSurvey" method="post" class="form survey">
+
             <h2>Your information</h2>
-            <div class="form-text">
+            <div class="form-input" >
                 <input type="hidden" name="action" value="add">
 
-                <label>Email</label>
-                <input type="email" name="email" required><br>
+                <div class="input-box">
+                    <input type="email" name="email" required ><br>
+                    <label>Email</label>
+                    <span class="bar"></span>
+                </div>
 
-                <label>First Name</label>
-                <input type="text" name="firstName" required><br>
+                <div class="input-box">
+                    <input type="text" name="firstName" required ><br>
+                    <label>First Name</label>
+                    <span class="bar"></span>
+                </div>
 
-                <label>Last Name</label>
-                <input type="text" name="lastName" required><br>
+                <div class="input-box">
+                    <input type="text" name="lastName" required ><br>
+                    <label>Last Name</label>
+                    <span class="bar"></span>
+                </div>
 
-                <label>Date of birth</label>
-                <input type="Date" name="dob" required><br>
+                <div class="input-box">
+                    <input type="Date" name="dob" required ><br>
+                    <span class="bar"></span>
+                </div>
             </div>
 
             <h3>How did you hear about us?</h3>
@@ -60,7 +71,6 @@
                 </select>
             </p>
 
-            <label>&nbsp;</label>
             <input type="submit" value="Join Now" id="submit">
             <div class="goHome">
                 <a href="../../index.html"> <i class='bx bx-home-alt-2' ></i> </a>

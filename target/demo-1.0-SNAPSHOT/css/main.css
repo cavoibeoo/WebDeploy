@@ -1,0 +1,137 @@
+html,body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+h1 {
+    color: teal;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-text{
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: darkcyan;
+}
+h3 {
+    color: darkcyan;
+}
+label {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.Outside{
+    justify-content: center;
+    align-items: center;
+    width: 700px; /* Set the width of the box */
+    background-color: white; /* Set the background color of the box */
+    border: 1px solid #000; /* Add a border to the box */
+    padding: 20px; /* Add padding inside the box */
+}
+
+/*================ Input formats ==================*/
+.input-box{
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input{
+    font-size: 1rem;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+input:focus{
+    outline: none;
+}
+
+/*================ label ==================*/
+.input-box label{
+    color: #999;
+    font-size: 1rem;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 10px;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+
+
+/*================ label animation ==================*/
+input:focus ~ label,
+input:valid ~ label{
+    top:-15px;
+    font-size:14px;
+    color:#7894d3;
+}
+
+br {
+    clear: both;
+}
+#submit {
+    margin-left: 0.5em; }
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+    content:'';
+    height:2px;
+    width:0;
+    top: -10px;
+    position:absolute;
+    background:#5264AE;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+.bar:before {
+    left:50%;
+}
+.bar:after {
+    right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+}
+
+/*Home button*/
+.goHome{
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 3rem 1.5rem 3rem 0;
+}

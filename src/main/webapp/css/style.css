@@ -81,7 +81,7 @@ header.sticky {
     display: flex;
     justify-content: space-between;
     align-items:  center;
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/bg-flipped.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -162,10 +162,10 @@ header.sticky {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background-image: url("../img/bg-flipped.jpg");
+/*    background-image: url("../img/bg-flipped.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    /*background: var(--second-bg-color);*/
+    !*background: var(--second-bg-color);*!*/
 }
 
 .about-img img{
@@ -203,9 +203,9 @@ header.sticky {
 
 
 .portfolio{
-    background-image: url("../img/bg_2.jpg");
+/*    background-image: url("../img/bg_2.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%;*/
 }
 
 .portfolio h2{
