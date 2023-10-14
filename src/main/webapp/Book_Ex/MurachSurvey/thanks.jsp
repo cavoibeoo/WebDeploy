@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!doctype html>
 <html>
     <head>
@@ -30,8 +32,10 @@
             <label>Your choice: </label>
             <span>${user.wantsUpdates}</span><br>
 
-            <label>Contact: </label>
-            <span>${user.contactVia}</span>
+            <c:if test="${user.wantsUpdates == 'Yes'}">
+                <label>Contact Via:</label>
+                <span>${user.contactVia}</span>
+            </c:if>
 
             <p>To enter another email address, click on the Back
                 button in your browser or the Return button shown
@@ -41,6 +45,7 @@
                 <input type="hidden" name="action" value="join">
                 <input type="button" value="Return!" onclick="history.back()">
             </form>
+            <p>&copy; Copyright ${currentYear} Mike Murach &amp; Associates</p>
         </div>
     </body>
 </html>

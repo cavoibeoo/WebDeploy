@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -13,7 +14,8 @@
 <body>
 <div class="Outside">
     <header>
-        <img src="beluga.jpg" height="150" width="150">
+        <object data="../../Animation/cavoibeoo.html"></object>
+        <!--<img src="beluga.jpg" height="150" width="150" alt="beluga">-->
         <h1 class="title">Survey</h1>
         <p class="header-text">If you have a moment, we'd appreciate it if you would fill out this survey</p>
     </header>
@@ -49,7 +51,7 @@
                 </div>
             </div>
 
-            <h3>How did you hear about us?</h3>
+            <h2>How did you hear about us?</h2>
             <div class="form-ratio">
                 <input type="radio" id="search_engine" name="heardFrom" value="Search engine"> Search engine
                 <input type="radio" id="word_of_mouth" name="heardFrom" value="Word of mouth"> Word of mouth
@@ -57,21 +59,29 @@
                 <input type="radio" id="other" name="heardFrom" value="Other"> Other
             </div>
 
-            <h4>Would you like to receive announcements about new CDs and special offers</h4>
+            <h2>Would you like to receive announcements about new CDs and special offers</h2>
             <div class="form-checkbox">
                 <input type="checkbox" id="yes1" name="wantsUpdates" value="Yes, I'd like that"> Yes, I'd like that <br>
                 <input type="checkbox" id="yes2" name="wantsUpdates" value="Yes, please send me email announcement"> Yes, please send me email announcement <br>
             </div>
 
-            <p>
-                <label for="contactVia">Please contact me by:</label>
+            <h2>Please contact me by:</h2>
+            <div class="form-choose">
                 <select name="contactVia" id="contactVia">
                     <option value="phone">Phone number</option>
                     <option value="email">Email</option>
+                    <option value="email and phone">Email and phone number</option>
                 </select>
-            </p>
+            </div>
 
-            <input type="submit" value="Join Now" id="submit">
+            <div class="submit-button-area">
+                <input type="submit" value="Join Now" class="submit">
+            </div>
+
+
+
+
+            <br>
             <div class="goHome">
                 <a href="../../index.html"> <i class='bx bx-home-alt-2' ></i> </a>
             </div>

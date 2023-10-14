@@ -162,14 +162,16 @@ header.sticky {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-/*    background-image: url("../img/bg-flipped.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    !*background: var(--second-bg-color);*!*/
+    background: rgb(176,217,247);
+    background: linear-gradient(0deg, rgba(176,217,247,1) 0%, rgba(176,217,247,1) 44%, rgba(250,254,255,1) 100%);
+    /*    background-image: url("../img/bg-flipped.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        !*background: var(--second-bg-color);*!*/
 }
 
 .about-img img{
-    width: 32vw;
+    width: 40vw;
     margin-right: 5rem;
 
 }
@@ -203,9 +205,9 @@ header.sticky {
 
 
 .portfolio{
-/*    background-image: url("../img/bg_2.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;*/
+    /*    background-image: url("../img/bg_2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;*/
 }
 
 .portfolio h2{

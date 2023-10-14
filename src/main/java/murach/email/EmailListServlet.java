@@ -41,32 +41,26 @@ public class EmailListServlet extends HttpServlet  {
             String firstName = request.getParameter("firstName");
             String lastName = request.getParameter("lastName");
             String email = request.getParameter("email");
-            String heardFrom = request.getParameter("heardFrom");
-            String wantsUpdates = request.getParameter("wantsUpdates");
-            String contactVia = request.getParameter("contactVia");
             
-            if (heardFrom == null) {
-                heardFrom = "NA";
-            }
-            if (wantsUpdates == null) {
-                wantsUpdates = "No";
+    
+            // store data in User object
+            User user = new User(firstName, lastName, email);
+    
+            // validate the parameters
+            String message;
+            if (firstName == null || lastName == null || email == null ||
+                        firstName.isEmpty() || lastName.isEmpty() || email.isEmpty()) {
+                message = "Please fill out all three text boxes.";
+                url = "/Book_Ex/EmailList2/index.jsp";
             }
             else {
-                wantsUpdates = "Yes";
+                message = null;
+                url = "/Book_Ex/EmailList2/thanks.jsp";
+                //UserDB.insert(user);
             }
-            // store data in User object
-        
-            User user = new User();
-            user.setFirstName(firstName);
-            user.setLastName(lastName);
-            user.setEmail(email);
-            user.setHeardFrom(heardFrom);
-            user.setWantsUpdates(wantsUpdates);
-            user.setContactVia(contactVia);
-        
-            // set User object in request object and set URL
+            
             request.setAttribute("user", user);
-            url = "/Book_Ex/EmailList2/thanks.jsp";   // the "thanks" page
+            request.setAttribute("message", message);
         }
         // forward request and response objects to specified URL
         getServletContext()

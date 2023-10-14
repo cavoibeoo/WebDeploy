@@ -1,37 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 html,body {
+    background-image: url("../img/blue-bg.jpg");
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Popins', sans-serif;
     font-size: 11pt;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.header{
+.Outside{
+
+    justify-content: center;
+    align-items: center;
+    width: 650px; /* Set the width of the box */
+    background-color: white; /* Set the background color of the box */
+    border: 4px solid #000; /* Add a border to the box */
+    padding: 20px; /* Add padding inside the box */
+}
+
+.Outside-emailist{
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+header{
     justify-content: center;
     text-align: center;
     align-items: center;
+    padding-bottom: 1rem;
 }
 
-
+.header-text{
+    text-align: center;
+    margin: 0;
+}
 
 h1 {
     color: teal;
     justify-content: center;
     text-align: center;
-}
-
-.header-text{
-    text-align: center;
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 1.6rem;
-    color: darkcyan;
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+    padding-bottom: 1rem;
 }
-h3 {
-    color: darkcyan;
+
+.form-ratio{
+    text-align: center;
+    padding-bottom: 1rem;
 }
+
+.form-checkbox{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.form-choose {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+select{
+    border-radius: 4px;
+    width: 200px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+}
+
 label {
     position: relative;
     top: 0;
@@ -42,13 +83,13 @@ label {
     margin-bottom: 5px;
 }
 
-.Outside{
+.special-text{
+    color: red;
     justify-content: center;
-    align-items: center;
-    width: 700px; /* Set the width of the box */
-    background-color: white; /* Set the background color of the box */
-    border: 1px solid #000; /* Add a border to the box */
-    padding: 20px; /* Add padding inside the box */
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    padding-top: 0px;
 }
 
 /*================ Input formats ==================*/
@@ -75,7 +116,7 @@ input:focus{
 /*================ label ==================*/
 .input-box label{
     color: #999;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: normal;
     position: absolute;
     pointer-events: none;
@@ -86,12 +127,11 @@ input:focus{
     -webkit-transition:0.2s ease all;
 }
 
-
 /*================ label animation ==================*/
 input:focus ~ label,
 input:valid ~ label{
     top:-15px;
-    font-size:14px;
+    font-size:0.8rem;
     color:#7894d3;
 }
 
@@ -114,9 +154,11 @@ br {
     -moz-transition:0.2s ease all;
     -webkit-transition:0.2s ease all;
 }
+
 .bar:before {
     left:50%;
 }
+
 .bar:after {
     right:50%;
 }
@@ -134,4 +176,41 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
     border-radius: 50%;
     font-size: 2rem;
     margin: 3rem 1.5rem 3rem 0;
+}
+
+.submit {
+    cursor: pointer;
+    width: 150px;
+    border: none;
+    transform: rotate(5deg);
+    transform-origin: center;
+    font-family: "Gochi Hand", cursive;
+    text-decoration: none;
+    font-size: 15px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #494a4b;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: #acd3fb;
+}
+
+.submit-button-area{
+    padding-top: 1rem   ;
+    text-align: center;
+    justify-content: center;
+}
+
+.button span {
+    background: #f1f5f8;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #494a4b;
+}
+
+.submit:active,
+.submit:hover{
+    transform: translateY(5px);
+    /*padding-bottom: 0px;*/
+    outline: 0;
 }
